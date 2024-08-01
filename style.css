@@ -1,25 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
 header {
-    background: #333;
+    background: #ff6f61;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 1rem 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin-left: 1rem;
 }
 
 nav ul li a {
@@ -27,65 +44,41 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 section {
-    padding: 20px;
+    padding: 2rem 0;
+}
+
+section .container {
+    max-width: 1200px;
     margin: 0 auto;
-    max-width: 800px;
+    padding: 0 1rem;
 }
 
-h1, h2 {
-    color: #333;
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+ul {
+    list-style: disc;
+    margin-left: 1.5rem;
 }
 
-.gallery-item {
-    flex: 1 1 30%;
-    box-sizing: border-box;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
+address {
+    font-style: normal;
 }
 
 footer {
     background: #333;
     color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
 }
